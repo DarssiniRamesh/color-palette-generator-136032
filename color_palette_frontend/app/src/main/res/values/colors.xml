@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Ocean Professional Palette -->
+    <color name="op_primary">#374151</color>
+    <color name="op_secondary">#9CA3AF</color>
+    <color name="op_success">#10B981</color>
+    <color name="op_error">#EF4444</color>
+    <color name="op_background">#FFFFFF</color>
+    <color name="op_surface">#F9FAFB</color>
+    <color name="op_text">#111827</color>
+    <color name="op_on_primary">#FFFFFF</color>
+</resources>

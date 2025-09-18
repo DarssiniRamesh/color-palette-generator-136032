@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.OceanProfessional" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/op_background</item>
+        <item name="colorPrimary">@color/op_primary</item>
+        <item name="colorOnPrimary">@color/op_on_primary</item>
+        <item name="colorSecondary">@color/op_secondary</item>
+        <item name="android:textColor">@color/op_text</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="materialButtonOutlinedStyle">@style/Widget.App.Button.Outlined</item>
+    </style>
+
+    <style name="Widget.App.Button.Outlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/op_text</item>
+    </style>
+
+    <!-- Tile styles for minimalist spacious layout -->
+    <style name="TileContainerStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">160dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/bg_tile_rounded</item>
+    </style>
+
+    <style name="TileLabelStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="TileCopyStyle">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:contentDescription">@string/copy</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:src">@drawable/ic_copy_24</item>
+    </style>
+</resources>

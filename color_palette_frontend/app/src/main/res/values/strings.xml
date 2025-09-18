@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Palette Generator</string>
+    <string name="generate">Generate palette</string>
+    <string name="copy">Copy color</string>
+</resources>

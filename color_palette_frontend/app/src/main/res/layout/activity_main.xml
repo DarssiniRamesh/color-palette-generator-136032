@@ -1,0 +1,114 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/op_background"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:dividerPadding="12dp"
+            android:showDividers="none">
+
+            <!-- Tile 1 -->
+            <LinearLayout
+                android:id="@+id/tile1"
+                style="@style/TileContainerStyle">
+
+                <TextView
+                    android:id="@+id/label1"
+                    style="@style/TileLabelStyle"
+                    android:text="#000000" />
+
+                <ImageButton
+                    android:id="@+id/copy1"
+                    style="@style/TileCopyStyle" />
+            </LinearLayout>
+
+            <!-- Tile 2 -->
+            <LinearLayout
+                android:id="@+id/tile2"
+                style="@style/TileContainerStyle">
+
+                <TextView
+                    android:id="@+id/label2"
+                    style="@style/TileLabelStyle"
+                    android:text="#000000" />
+
+                <ImageButton
+                    android:id="@+id/copy2"
+                    style="@style/TileCopyStyle" />
+            </LinearLayout>
+
+            <!-- Tile 3 -->
+            <LinearLayout
+                android:id="@+id/tile3"
+                style="@style/TileContainerStyle">
+
+                <TextView
+                    android:id="@+id/label3"
+                    style="@style/TileLabelStyle"
+                    android:text="#000000" />
+
+                <ImageButton
+                    android:id="@+id/copy3"
+                    style="@style/TileCopyStyle" />
+            </LinearLayout>
+
+            <!-- Tile 4 -->
+            <LinearLayout
+                android:id="@+id/tile4"
+                style="@style/TileContainerStyle">
+
+                <TextView
+                    android:id="@+id/label4"
+                    style="@style/TileLabelStyle"
+                    android:text="#000000" />
+
+                <ImageButton
+                    android:id="@+id/copy4"
+                    style="@style/TileCopyStyle" />
+            </LinearLayout>
+
+            <!-- Tile 5 -->
+            <LinearLayout
+                android:id="@+id/tile5"
+                style="@style/TileContainerStyle">
+
+                <TextView
+                    android:id="@+id/label5"
+                    style="@style/TileLabelStyle"
+                    android:text="#000000" />
+
+                <ImageButton
+                    android:id="@+id/copy5"
+                    style="@style/TileCopyStyle" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:contentDescription="@string/generate"
+        app:tint="@color/op_on_primary"
+        app:backgroundTint="@color/op_primary"
+        app:srcCompat="@drawable/ic_refresh_24"
+        app:layout_anchor="@id/root"
+        app:layout_anchorGravity="bottom|end" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
