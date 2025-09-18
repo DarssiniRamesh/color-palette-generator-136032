@@ -1,0 +1,261 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Scrollable area for five tiles -->
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fab_generate"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/tiles_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:dividerPadding="8dp"
+            android:showDividers="none"
+            android:background="#F9FAFB"
+            android:paddingBottom="88dp">
+
+            <!-- Tile template repeated for 5 tiles -->
+            <!-- Tile 1 -->
+            <LinearLayout
+                android:id="@+id/tile1"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginBottom="16dp"
+                android:background="#E5E7EB"
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:clipToOutline="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="end">
+
+                    <ImageButton
+                        android:id="@+id/copy1"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="Copy color code"
+                        android:src="@drawable/ic_copy" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/hex1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#000000"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:layout_marginTop="8dp" />
+
+                <TextView
+                    android:id="@+id/hsl1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HSL(0, 0%, 0%)"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+
+            <!-- Tile 2 -->
+            <LinearLayout
+                android:id="@+id/tile2"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginBottom="16dp"
+                android:background="#E5E7EB"
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:clipToOutline="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="end">
+
+                    <ImageButton
+                        android:id="@+id/copy2"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="Copy color code"
+                        android:src="@drawable/ic_copy" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/hex2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#000000"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:layout_marginTop="8dp" />
+
+                <TextView
+                    android:id="@+id/hsl2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HSL(0, 0%, 0%)"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+
+            <!-- Tile 3 -->
+            <LinearLayout
+                android:id="@+id/tile3"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginBottom="16dp"
+                android:background="#E5E7EB"
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:clipToOutline="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="end">
+
+                    <ImageButton
+                        android:id="@+id/copy3"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="Copy color code"
+                        android:src="@drawable/ic_copy" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/hex3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#000000"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:layout_marginTop="8dp" />
+
+                <TextView
+                    android:id="@+id/hsl3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HSL(0, 0%, 0%)"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+
+            <!-- Tile 4 -->
+            <LinearLayout
+                android:id="@+id/tile4"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginBottom="16dp"
+                android:background="#E5E7EB"
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:clipToOutline="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="end">
+
+                    <ImageButton
+                        android:id="@+id/copy4"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="Copy color code"
+                        android:src="@drawable/ic_copy" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/hex4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#000000"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:layout_marginTop="8dp" />
+
+                <TextView
+                    android:id="@+id/hsl4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HSL(0, 0%, 0%)"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+
+            <!-- Tile 5 -->
+            <LinearLayout
+                android:id="@+id/tile5"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginBottom="16dp"
+                android:background="#E5E7EB"
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:clipToOutline="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="end">
+
+                    <ImageButton
+                        android:id="@+id/copy5"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="Copy color code"
+                        android:src="@drawable/ic_copy" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/hex5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#000000"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:layout_marginTop="8dp" />
+
+                <TextView
+                    android:id="@+id/hsl5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HSL(0, 0%, 0%)"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Floating Action Button -->
+    <ImageButton
+        android:id="@+id/fab_generate"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_refresh"
+        android:contentDescription="@string/generate_new_palette" />
+
+</RelativeLayout>

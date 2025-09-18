@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Ocean Professional Palette</string>
+    <string name="generate_new_palette">Generate new palette</string>
+    <string name="copy">Copy</string>
+</resources>
