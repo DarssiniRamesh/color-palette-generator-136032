@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tile1" type="id"/>
+    <item name="tile2" type="id"/>
+    <item name="tile3" type="id"/>
+    <item name="tile4" type="id"/>
+    <item name="tile5" type="id"/>
+</resources>

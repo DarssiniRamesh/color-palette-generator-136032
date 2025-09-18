@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.ColorPalette" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/ocean_primary</item>
+        <item name="colorSecondary">@color/ocean_secondary</item>
+        <item name="android:colorBackground">#121212</item>
+        <item name="colorSurface">#1E1E1E</item>
+        <item name="android:textColor">@color/ocean_text_light</item>
+        <item name="android:buttonStyle">@style/Widget.ColorPalette.Button</item>
+        <item name="android:fontFamily">@font/inter</item>
+    </style>
+</resources>

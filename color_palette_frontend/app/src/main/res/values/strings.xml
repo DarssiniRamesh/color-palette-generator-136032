@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Color Palette Generator</string>
+
+    <!-- Accessibility and content descriptions -->
+    <string name="cd_generate_palette">Generate new palette</string>
+    <string name="cd_toggle_theme">Toggle light/dark theme</string>
+    <string name="cd_copy_hsl">Copy HSL value %1$s</string>
+    <string name="cd_copy_hex">Copy HEX value %1$s</string>
+    <string name="cd_copy_hsl_generic">Copy HSL</string>
+    <string name="cd_copy_hex_generic">Copy HEX</string>
+
+    <!-- Feedback -->
+    <string name="copied_to_clipboard">%1$s copied</string>
+    <string name="dark_mode_on">Dark mode on</string>
+    <string name="dark_mode_off">Dark mode off</string>
+
+    <!-- Tooltips -->
+    <string name="tooltip_copy_hsl">Copy HSL</string>
+    <string name="tooltip_copy_hex">Copy HEX</string>
+</resources>
