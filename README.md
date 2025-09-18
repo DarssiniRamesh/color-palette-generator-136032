@@ -1,1 +1,3 @@
-# color-palette-generator-136032
+# Project Repository
+
+This is the initial README file for the project.
