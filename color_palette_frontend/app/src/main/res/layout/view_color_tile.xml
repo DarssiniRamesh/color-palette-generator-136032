@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="200dp"
-    android:layout_marginTop="12dp"
-    android:layout_marginBottom="12dp"
+    android:layout_height="180dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
     card_view:cardUseCompatPadding="true"
     card_view:cardCornerRadius="12dp"
-    card_view:cardElevation="6dp"
-    android:foreground="?attr/selectableItemBackground"
-    >
+    card_view:cardElevation="4dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,78 +18,28 @@
             android:id="@+id/tileColor"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"/>
+            android:layout_weight="1" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="12dp"
-            android:gravity="center_vertical"
-            >
+            android:orientation="vertical"
+            android:padding="12dp">
 
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_weight="1">
-
-                <TextView
-                    android:id="@+id/textHsl"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:textSize="16sp"
-                    android:textColor="@color/ocean_text_dark"
-                    android:text="hsl(0, 0%, 0%)"/>
-
-                <TextView
-                    android:id="@+id/textHex"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="14sp"
-                    android:textColor="@color/ocean_secondary"
-                    android:text="#FFFFFF"/>
-            </LinearLayout>
-
-            <LinearLayout
+            <TextView
+                android:id="@+id/textHsl"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingStart="8dp"
-                android:paddingEnd="4dp">
+                android:text="hsl(0, 0%, 0%)"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
-                <ImageButton
-                    android:id="@+id/btnCopyHsl"
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
-                    android:background="?attr/selectableItemBackgroundBorderless"
-                    app:tint="@color/ocean_primary"
-                    android:contentDescription="@string/cd_copy_hsl_generic"
-                    android:padding="12dp"
-                    android:importantForAccessibility="yes"
-                    android:focusable="true"
-                    android:clickable="true"
-                    android:duplicateParentState="false"
-                    android:tooltipText="@string/tooltip_copy_hsl"
-                    android:src="@drawable/ic_copy" />
-
-                <ImageButton
-                    android:id="@+id/btnCopyHex"
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
-                    android:background="?attr/selectableItemBackgroundBorderless"
-                    app:tint="@color/ocean_primary"
-                    android:contentDescription="@string/cd_copy_hex_generic"
-                    android:padding="12dp"
-                    android:importantForAccessibility="yes"
-                    android:focusable="true"
-                    android:clickable="true"
-                    android:duplicateParentState="false"
-                    android:tooltipText="@string/tooltip_copy_hex"
-                    android:src="@drawable/ic_copy" />
-            </LinearLayout>
-
+            <TextView
+                android:id="@+id/textHex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#FFFFFF"
+                android:textSize="14sp" />
         </LinearLayout>
     </LinearLayout>
 
